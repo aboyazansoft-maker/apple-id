@@ -1,63 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEGA APPLE ID</title>
+    <title>حساب شام كاش</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-        :root { --primary-purple: #5b2d8c; --bg-gray: #f5f5f5; --text-dark: #1f2937; --text-light: #6b7280; --border-color: #e5e7eb; }
-        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-gray); margin: 0; padding: 0; display: flex; justify-content: center; color: var(--text-dark); }
-        .container { width: 100%; max-width: 480px; padding: 20px; box-sizing: border-box; }
-        .logo-container { text-align: center; margin-top: 30px; margin-bottom: 20px; }
-        .logo-text { font-size: 48px; font-weight: 700; color: var(--primary-purple); margin: 0; display: flex; justify-content: center; }
-        .logo-sub { font-size: 16px; font-weight: 500; color: var(--primary-purple); letter-spacing: 5px; margin-top: 5px; }
-        .main-card { background-color: white; border-radius: 12px; padding: 24px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .section-title { font-size: 20px; font-weight: 600; margin-bottom: 15px; color: black; }
-        .data-box { border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 25px; overflow: hidden; }
-        .data-row { display: flex; justify-content: space-between; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color); }
-        .data-row:last-child { border-bottom: none; }
-        .data-content { display: flex; flex-direction: column; flex: 1; }
-        .data-label { font-size: 13px; font-weight: 600; color: black; }
-        .data-value { font-size: 16px; color: var(--text-light); word-break: break-all; }
-        .copy-btn { background-color: var(--primary-purple); border: none; border-radius: 6px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; cursor: pointer; flex-shrink: 0; }
-        .copy-btn svg { width: 18px; height: 18px; fill: white; }
-        .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background-color: #333; color: white; padding: 10px 20px; border-radius: 30px; opacity: 0; transition: opacity 0.3s; z-index: 1000; }
+        /* استيراد خط تجوال العربي الاحترافي */
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        
+        :root {
+            --primary: #107c41; /* لون أخضر مالي أنيق، يمكنك تغييره */
+            --bg: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-sub: #6b7280;
+            --border: #e5e7eb;
+        }
+        
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--bg); margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; color: var(--text-main); }
+        .container { width: 100%; max-width: 420px; flex: 1; }
+        
+        .header { text-align: center; margin-bottom: 30px; margin-top: 20px; }
+        .logo-icon { font-size: 45px; margin-bottom: 5px; }
+        .title { font-size: 26px; font-weight: 700; color: var(--primary); margin: 0; }
+        
+        .card { background: var(--card-bg); border-radius: 16px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.02); }
+        
+        .field-group { border-bottom: 1px solid var(--border); padding: 16px 0; display: flex; justify-content: space-between; align-items: center; }
+        .field-group:last-child { border-bottom: none; }
+        
+        .info { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+        .label { font-size: 14px; font-weight: 700; color: var(--primary); }
+        .value { font-size: 16px; font-weight: 500; word-break: break-all; direction: ltr; text-align: right; }
+        
+        .copy-btn { background: var(--primary); color: white; border: none; border-radius: 8px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.2s; margin-right: 15px; flex-shrink: 0; }
+        .copy-btn:active { transform: scale(0.95); opacity: 0.8; }
+        .copy-btn svg { width: 20px; height: 20px; fill: currentColor; }
+        
+        /* التذييل في أسفل الصفحة */
+        .footer { text-align: center; margin-top: 40px; padding-bottom: 20px; font-size: 15px; font-weight: 700; color: var(--text-sub); width: 100%; opacity: 0.8; }
+        
+        .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 10px 20px; border-radius: 20px; opacity: 0; transition: 0.3s; pointer-events: none; font-size: 14px; z-index: 1000; }
         .toast.show { opacity: 1; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <div class="logo-text"><i>M</i>EGA</div>
-            <div class="logo-sub">APPLE ID</div>
+        <!-- الشعار والعنوان -->
+        <div class="header">
+            <div class="logo-icon">💸</div>
+            <h1 class="title">حساب شام كاش</h1>
         </div>
-        <div class="main-card">
-            <div class="section-title">Apple ID:</div>
-            <div class="data-box">
-                <div class="data-row">
-                    <div class="data-content"><div class="data-label">Email:</div><div class="data-value" id="val-email">---</div></div>
-                    <button class="copy-btn" onclick="copyText('val-email')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+        
+        <!-- بطاقة المعلومات -->
+        <div class="card">
+            <!-- الخانة الأولى -->
+            <div class="field-group">
+                <div class="info">
+                    <span class="label">البريد الإلكتروني</span>
+                    <span class="value" id="val-email">---</span>
                 </div>
-                <div class="data-row">
-                    <div class="data-content"><div class="data-label">Password:</div><div class="data-value" id="val-password">---</div></div>
-                    <button class="copy-btn" onclick="copyText('val-password')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
-                </div>
-                <div class="data-row">
-                    <div class="data-content"><div class="data-label">Birthday:</div><div class="data-value" id="val-birthday">---</div></div>
-                    <button class="copy-btn" onclick="copyText('val-birthday')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
-                </div>
+                <button class="copy-btn" onclick="copyText('val-email')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
             </div>
-            <div class="section-title">Security Question:</div>
-            <div class="data-box">
-                <div class="data-row">
-                    <div class="data-content"><div class="data-value" style="color:black; font-weight:500;">What is the first name of your best friend in high school?</div><div class="data-value" id="val-q1" style="margin-top:5px;">---</div></div>
-                    <button class="copy-btn" onclick="copyText('val-q1')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+            
+            <!-- الخانة الثانية -->
+            <div class="field-group">
+                <div class="info">
+                    <span class="label">كلمة سر الحساب</span>
+                    <span class="value" id="val-password">---</span>
                 </div>
+                <button class="copy-btn" onclick="copyText('val-password')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
             </div>
+            
+            <!-- الخانة الثالثة -->
+            <div class="field-group">
+                <div class="info">
+                    <span class="label">الرقم المربوط بالحساب</span>
+                    <span class="value" id="val-number">---</span>
+                </div>
+                <button class="copy-btn" onclick="copyText('val-number')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+            </div>
+            
+            <!-- الخانة الرابعة -->
+            <div class="field-group">
+                <div class="info">
+                    <span class="label">رمز دخول التطبيق</span>
+                    <span class="value" id="val-code">---</span>
+                </div>
+                <button class="copy-btn" onclick="copyText('val-code')"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button>
+            </div>
+        </div>
+        
+        <!-- التذييل -->
+        <div class="footer">
+            شام اكاديمي كافة خدمات الموبايل
         </div>
     </div>
-    <div id="toast" class="toast">تم النسخ!</div>
+    
+    <div id="toast" class="toast">تم النسخ بنجاح!</div>
+    
     <script>
         window.onload = function() {
             const hash = window.location.hash.substring(1);
@@ -65,13 +106,14 @@
                 const params = new URLSearchParams(hash);
                 if(params.get('e')) document.getElementById('val-email').innerText = decodeURIComponent(params.get('e'));
                 if(params.get('p')) document.getElementById('val-password').innerText = decodeURIComponent(params.get('p'));
-                if(params.get('b')) document.getElementById('val-birthday').innerText = decodeURIComponent(params.get('b'));
-                if(params.get('q')) document.getElementById('val-q1').innerText = decodeURIComponent(params.get('q'));
+                if(params.get('n')) document.getElementById('val-number').innerText = decodeURIComponent(params.get('n'));
+                if(params.get('c')) document.getElementById('val-code').innerText = decodeURIComponent(params.get('c'));
             }
         };
         function copyText(id) {
             navigator.clipboard.writeText(document.getElementById(id).innerText).then(() => {
-                const toast = document.getElementById("toast"); toast.classList.add("show");
+                const toast = document.getElementById("toast");
+                toast.classList.add("show");
                 setTimeout(() => toast.classList.remove("show"), 2000);
             });
         }
